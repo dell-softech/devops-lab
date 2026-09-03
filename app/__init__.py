@@ -12,4 +12,8 @@ def create_app():
     def health():
         return {"status": "ok"}
 
+    @app.route("/about")
+    def about():
+        return "DevOps Lab Project"
+
     return app
